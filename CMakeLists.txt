@@ -9,6 +9,7 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 
 foreach(name
   singleton
+  factory_method
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
