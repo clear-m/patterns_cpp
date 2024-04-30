@@ -10,6 +10,8 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 foreach(name
   singleton
   factory_method
+  observer_simple
+  #observer_simple_2
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
