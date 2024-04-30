@@ -12,6 +12,7 @@ foreach(name
   factory_method
   observer_simple
   #observer_simple_2
+  decorator_simple
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
