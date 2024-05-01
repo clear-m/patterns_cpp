@@ -11,8 +11,8 @@ foreach(name
   singleton
   factory_method
   observer_simple
-  #observer_simple_2
   decorator_simple
+  strategy
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
