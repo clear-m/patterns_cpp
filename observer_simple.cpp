@@ -11,18 +11,18 @@ public:
 class Subject
 {
 private:
-    std::vector<std::shared_ptr<Observer>> observers;
+    std::vector<std::shared_ptr<Observer>> observers_;
 
 public:
     void addObserver(const std::shared_ptr<Observer> & observer)
     {
-        observers.push_back(observer);
+        observers_.push_back(observer);
     }
     void notifyObservers()
     {
         // perform notification
         std::cout << "notifying!" << std::endl;
-        for (auto& observer : observers)
+        for (auto& observer : observers_)
         {
             observer->update();
         }

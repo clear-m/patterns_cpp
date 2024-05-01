@@ -35,7 +35,7 @@ private:
     std::unique_ptr<Strategy> strategy_;
 
 public:
-    Context(std::unique_ptr<Strategy> &&strategy) : strategy_(std::move(strategy)){};
+    Context(std::unique_ptr<Strategy> strategy) : strategy_(std::move(strategy)){};
     ~Context()
     {
     }
