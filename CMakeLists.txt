@@ -13,6 +13,7 @@ foreach(name
   observer_simple
   decorator_simple
   strategy
+  wrapper
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
