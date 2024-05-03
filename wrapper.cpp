@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main()
+int main(int argc, char **argv)
 {
     Wrapper wrapper(std::make_unique<Adaptee>());
     std::cout << wrapper.Request() << std::endl;
