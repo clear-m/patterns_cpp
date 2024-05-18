@@ -15,6 +15,7 @@ foreach(name
   strategy
   wrapper
   proxy
+  fabrics
 )
   add_executable(${name} ${name}.cpp)
   target_link_libraries(${name} PRIVATE)
